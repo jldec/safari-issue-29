@@ -1,5 +1,5 @@
 # safari-issue-29
-Attempt to build a repro for jldec's [iOS Safari issue]([url](https://github.com/fmctraining/fmc-website/issues/29))
+Attempt to build a repro for jldec's [iOS Safari issue](https://github.com/fmctraining/fmc-website/issues/29)
 
 Github: https://github.com/jldec/safari-issue-29
 

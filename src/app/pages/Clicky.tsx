@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-export function ClientComponentTest() {
+export function Clicky() {
   const [state, setState] = useState(false)
 
   return (

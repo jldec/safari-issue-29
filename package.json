@@ -15,7 +15,7 @@
     "tail": "wrangler tail"
   },
   "dependencies": {
-    "rwsdk": "0.1.26"
+    "rwsdk": "0.1.28"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "1.7.4",

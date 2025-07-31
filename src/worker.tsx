@@ -1,11 +1,23 @@
-import { defineApp } from 'rwsdk/worker'
+import { defineApp, renderToStream } from 'rwsdk/worker'
 import { render, route } from 'rwsdk/router'
 
 import { Document } from '@/app/Document'
-import { Home } from '@/app/pages/Home'
+import { HomePage } from '@/app/pages/HomePage'
+import { NotFoundPage } from '@/app/pages/NotFoundPage'
+import { ClientComponentPage } from './app/pages/ClientComponentPage'
 
 export type AppContext = {}
 
 export default defineApp([
-  render(Document, [route('*', Home)])
+  render(Document, [route('/', HomePage), route('/client-component', ClientComponentPage)]),
+  route('/*', async () => {
+    const stream = await renderToStream(
+      <NotFoundPage />,
+      { Document }
+    )
+    return new Response(stream, {
+      status: 404,
+      headers: { 'Content-Type': 'text/html' }
+    })
+  })
 ])

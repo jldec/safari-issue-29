@@ -211,6 +211,8 @@ const data = [
 export function DataLinks() {
   return (
     <div>
+      <hr />
+      <i>All the links below should 404.</i>
       {data.map((classData, index) => (
         <div key={'data-links-' + index}>
           <h4>{classData.href ? <a href={classData.href}>{classData.name}</a> : classData.name}</h4>

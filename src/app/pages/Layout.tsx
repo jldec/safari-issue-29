@@ -2,7 +2,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <nav>
-        <span style={{ fontSize: '2em' }}>🕺🕺 </span>client-side nav
+        {/* <span style={{ fontSize: '2em' }}>🕺🕺 </span>client-side nav */}
+        <span style={{ fontSize: '2em' }}>😇😇 </span>normal mpa nav
         <h3>
           <a href="/">Home</a>
           {' │ '}

@@ -1,4 +1,7 @@
 # safari-issue-29
+> [!NOTE]
+> The issue below can no longer be reproduced.
+
 Attempt to build a repro for jldec's [iOS Safari issue](https://github.com/fmctraining/fmc-website/issues/29)
 
 Github: https://github.com/jldec/safari-issue-29

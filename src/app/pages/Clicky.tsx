@@ -8,7 +8,6 @@ export function Clicky() {
   return (
     <button
       onClick={() => setState((state) => !state)}
-      title="Search (Cmd+K)"
       style={{
         backgroundColor: 'transparent',
         cursor: 'pointer'

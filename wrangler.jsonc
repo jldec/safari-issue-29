@@ -4,7 +4,6 @@
   "name": "safari-issue-29",
   "main": "src/worker.tsx",
   "compatibility_flags": ["nodejs_compat"],
-  "assets": { "binding": "ASSETS" },
   "observability": { "enabled": true },
-  "vars": {}
+  "preview_urls": true
 }
